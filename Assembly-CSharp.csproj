@@ -36,7 +36,10 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Main\Blocks\CubeProperties.cs" />
+     <Compile Include="Assets\Main\Blocks\CubeAnatomy\CubeProperties.cs" />
+     <Compile Include="Assets\Main\Blocks\Quad&amp;Block\Quad.cs" />
+     <Compile Include="Assets\Main\Blocks\Quad&amp;Block\Block.cs" />
+     <Compile Include="Assets\Main\Blocks\Quad&amp;Block\MeshUtils.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.28f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
