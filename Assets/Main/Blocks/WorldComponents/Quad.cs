@@ -5,7 +5,7 @@ using UnityEngine;
 public class Quad
 {
     public Mesh mesh;
-    public Quad(Block.BlockSide side, Vector3 offset, MeshUtils.BlocType bType)
+    public Quad(MeshUtils.BlockSide side, Vector3 offset, MeshUtils.BlocType bType)
     {
         // // We can add mesh filter programtically 
         // MeshFilter mf = this.gameObject.AddComponent<MeshFilter>();
@@ -46,7 +46,7 @@ public class Quad
 
         switch (side)
         {
-            case Block.BlockSide.FRONT:
+            case MeshUtils.BlockSide.FRONT:
                 {
                     // Specific points we take all of them have positive Z which is their normal
                     vertices = new Vector3[] { p5, p4, p0, p1 };
@@ -60,7 +60,7 @@ public class Quad
                     polygons = new int[] { 0, 1, 2, 2, 3, 0 };
                     break;
                 }
-            case Block.BlockSide.BACK:
+            case MeshUtils.BlockSide.BACK:
                 {
                     // Specific points we take all of them have positive Z which is their normal
                     vertices = new Vector3[] { p6, p7, p3, p2 };
@@ -71,7 +71,7 @@ public class Quad
                     polygons = new int[] { 2, 1, 0, 0, 3, 2 };
                     break;
                 }
-            case Block.BlockSide.LEFT:
+            case MeshUtils.BlockSide.LEFT:
                 {
                     // Specific points we take all of them have positive Z which is their normal
                     vertices = new Vector3[] { p6, p5, p1, p2 };
@@ -82,7 +82,7 @@ public class Quad
                     polygons = new int[] { 0, 1, 2, 2, 3, 0 };
                     break;
                 }
-            case Block.BlockSide.RIGHT:
+            case MeshUtils.BlockSide.RIGHT:
                 {
                     // Specific points we take all of them have positive Z which is their normal
                     vertices = new Vector3[] { p7, p4, p0, p3 };
@@ -93,7 +93,7 @@ public class Quad
                     polygons = new int[] { 2, 1, 0, 0, 3, 2 };
                     break;
                 }
-            case Block.BlockSide.TOP:
+            case MeshUtils.BlockSide.TOP:
                 {
                     // Specific points we take all of them have positive Z which is their normal
                     vertices = new Vector3[] { p6, p7, p4, p5 };
@@ -104,7 +104,7 @@ public class Quad
                     polygons = new int[] { 0, 1, 2, 2, 3, 0 };
                     break;
                 }
-            case Block.BlockSide.BOTTOM:
+            case MeshUtils.BlockSide.BOTTOM:
                 {
                     // Specific points we take all of them have positive Z which is their normal
                     vertices = new Vector3[] { p2, p3, p0, p1 };
@@ -130,9 +130,5 @@ public class Quad
 
     }
 
-    // Update is called once per frame
-    void Update()
-    {
 
-    }
 }

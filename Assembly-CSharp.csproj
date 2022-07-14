@@ -36,10 +36,11 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Main\Blocks\WorldComponents\Block.cs" />
      <Compile Include="Assets\Main\Blocks\CubeAnatomy\CubeProperties.cs" />
-     <Compile Include="Assets\Main\Blocks\Quad&amp;Block\Quad.cs" />
-     <Compile Include="Assets\Main\Blocks\Quad&amp;Block\Block.cs" />
-     <Compile Include="Assets\Main\Blocks\Quad&amp;Block\MeshUtils.cs" />
+     <Compile Include="Assets\Main\Blocks\WorldComponents\Quad.cs" />
+     <Compile Include="Assets\Main\Blocks\WorldComponents\MeshUtils.cs" />
+     <Compile Include="Assets\Main\Blocks\WorldComponents\Chunk.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.28f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
@@ -261,6 +262,9 @@
     </Reference>
     <Reference Include="UnityEditor.UnityConnectModule">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.28f1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Burst.Unsafe">
+        <HintPath>D:\Game_Dev\Voxel_Worlds\Library\PackageCache\com.unity.burst@1.4.11\Unity.Burst.Unsafe.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
         <HintPath>D:\Game_Dev\Voxel_Worlds\Library\PackageCache\com.unity.nuget.newtonsoft-json@2.0.0\Runtime\Newtonsoft.Json.dll</HintPath>
@@ -613,6 +617,9 @@
     <Reference Include="Unity.VSCode.Editor">
         <HintPath>D:\Game_Dev\Voxel_Worlds\Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Burst">
+        <HintPath>D:\Game_Dev\Voxel_Worlds\Library\ScriptAssemblies\Unity.Burst.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
         <HintPath>D:\Game_Dev\Voxel_Worlds\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
@@ -628,17 +635,26 @@
     <Reference Include="Unity.TextMeshPro">
         <HintPath>D:\Game_Dev\Voxel_Worlds\Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Mathematics.Editor">
+        <HintPath>D:\Game_Dev\Voxel_Worlds\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Burst.Editor">
+        <HintPath>D:\Game_Dev\Voxel_Worlds\Library\ScriptAssemblies\Unity.Burst.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEditor.UI">
         <HintPath>D:\Game_Dev\Voxel_Worlds\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.PlasticSCM.Editor">
-        <HintPath>D:\Game_Dev\Voxel_Worlds\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
         <HintPath>D:\Game_Dev\Voxel_Worlds\Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
         <HintPath>D:\Game_Dev\Voxel_Worlds\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.PlasticSCM.Editor">
+        <HintPath>D:\Game_Dev\Voxel_Worlds\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Mathematics">
+        <HintPath>D:\Game_Dev\Voxel_Worlds\Library\ScriptAssemblies\Unity.Mathematics.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

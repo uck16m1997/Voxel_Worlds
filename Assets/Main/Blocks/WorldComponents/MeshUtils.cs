@@ -5,6 +5,8 @@ using UnityEngine;
 using VertexData = System.Tuple<UnityEngine.Vector3, UnityEngine.Vector3, UnityEngine.Vector2>;
 public static class MeshUtils
 {
+    public enum BlockSide { BOTTOM, TOP, LEFT, RIGHT, FRONT, BACK }
+
     public enum BlocType
     {
         GRASSTOP, GRASSSIDE, DIRT, WATER, STONE, SAND
