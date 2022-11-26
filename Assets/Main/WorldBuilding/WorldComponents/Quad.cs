@@ -28,6 +28,7 @@ public class Quad
         Vector2 uv01 = MeshUtils.blockUVs[(int)bType, 1];
         Vector2 uv10 = MeshUtils.blockUVs[(int)bType, 2];
         Vector2 uv11 = MeshUtils.blockUVs[(int)bType, 3];
+        Debug.Log(uv00 + "," + uv01 + "," + uv10 + "," + uv11);
 
         // (X , Y ,Z)
         // Positive X Left , Negative X Right

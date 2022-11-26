@@ -36,11 +36,12 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Main\Blocks\WorldComponents\Block.cs" />
-     <Compile Include="Assets\Main\Blocks\CubeAnatomy\CubeProperties.cs" />
-     <Compile Include="Assets\Main\Blocks\WorldComponents\Quad.cs" />
-     <Compile Include="Assets\Main\Blocks\WorldComponents\MeshUtils.cs" />
-     <Compile Include="Assets\Main\Blocks\WorldComponents\Chunk.cs" />
+     <Compile Include="Assets\Main\WorldBuilding\WorldComponents\Block.cs" />
+     <Compile Include="Assets\Main\WorldBuilding\CubeAnatomy\CubeProperties.cs" />
+     <Compile Include="Assets\Main\WorldBuilding\WorldComponents\Quad.cs" />
+     <Compile Include="Assets\Main\WorldBuilding\WorldComponents\MeshUtils.cs" />
+     <Compile Include="Assets\Main\WorldBuilding\WorldComponents\Chunky.cs" />
+     <Compile Include="Assets\Main\WorldBuilding\WorldComponents\Chunk.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.28f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>

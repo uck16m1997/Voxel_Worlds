@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-// VertexData will hold the vertex vector, normal vector and the uv vector
+// VertexData will hold the vertex vector location, normal vector direction and the uv vector coordinate mappings
 using VertexData = System.Tuple<UnityEngine.Vector3, UnityEngine.Vector3, UnityEngine.Vector2>;
 public static class MeshUtils
 {
@@ -9,7 +9,7 @@ public static class MeshUtils
 
     public enum BlocType
     {
-        GRASSTOP, GRASSSIDE, DIRT, WATER, STONE, SAND
+        GRASSTOP, GRASSSIDE, DIRT, WATER, STONE, SAND, AIR
     }
     // [,] means it is an two dimensional array
     public static Vector2[,] blockUVs = {
@@ -23,7 +23,7 @@ public static class MeshUtils
     };
     public static Mesh MergeMeshes(Mesh[] meshes)
     {
-        // Create a mesh to hold all the data
+        // Create a mesh to hold all the mesh data
         Mesh mesh = new Mesh();
 
         // Will keep track of the order of vertices
